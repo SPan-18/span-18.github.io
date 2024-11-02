@@ -59,7 +59,7 @@ redirect_from:
 ## News
 - *Oct 8, 2024:* Our new package **spStack** is now available on [CRAN](https://cran.r-project.org/package=spStack)!
 - *Oct 4, 2024:* The spStack [website](https://span-18.github.io/spStack-dev/) is now live!
-- *Sep 29, 2024:* Article accepted at [Annals of Work Exposures and Health](https://doi.org/10.1093/annweh/wxae061).
+- *Sep 29, 2024:* Article published in [Annals of Work Exposures and Health](https://doi.org/10.1093/annweh/wxae061).
 - *Jun 26, 2024:* Selected to receive the [UCLA Dissertation Year Award](https://grad.ucla.edu/funding/financial-aid/funding-for-continuing-students/dissertation-year-fellowship/).
 - *Jun 7, 2024:* New preprint out on [arXiv](https://arxiv.org/abs/2406.04655).
 - *Dec 12, 2023:* Advanced to candidacy for the doctoral degree.
