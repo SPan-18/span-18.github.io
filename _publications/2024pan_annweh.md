@@ -7,7 +7,7 @@ excerpt: 'A Bayesian state-space modeling framework that synthesizes information
 date: 2024-10-1
 venue: 'Annals of Work Exposures and Health'
 slidesurl: 'https://doi.org/10.1093/annweh/wxae061'
-paperurl: 'http://span-18.github.io/files/pan2024annweh.bib'
+paperurl: /files/pan2024annweh.txt
 citation: '<b>Pan, S.</b>, Das, D., Ramachandran, G., & Banerjee, S. (2024). &quot;Bayesian hierarchical modeling and inference for mechanistic systems in industrial hygiene.&quot; <i>Annals of Work Exposures and Health<i>, 68(8), 834–845.'
 ---
 

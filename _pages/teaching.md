@@ -26,11 +26,11 @@ author_profile: true
 <span style="font-size: smaller">Statistical theory and foundations for carrying out inference on spatially referenced datasets, computational methods and algorithms. Practical examples and applications demonstrated using BUGS, JAGS and NIMBLE software packages in R.</span>
 
 - **Special Reader**, Department of Biostatistics, UCLA
-  - *Biostatistics 255A: Advanced Probability and Statistics* Instructor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)<br />
+  - *Biostatistics 255A: Advanced Probability and Statistics*, Instructor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)<br />
 <span class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{"Fall 2021, Fall 2022"}}</span><br />
 <span style="font-size: smaller">Topics in measure theoretic probability including set theory, analysis, probability measure, Caratheodory extension theorem, Borel-Cantelli lemmas.</span>
 
-  - *Biostatistics 255B: Advanced Probability and Statistics* Instructor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)<br />
+  - *Biostatistics 255B: Advanced Probability and Statistics*, Instructor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)<br />
 <span class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{"Winter 2022, Winter 2023"}}</span><br />
 <span style="font-size: smaller">Topics in measure theoretic probability including random variables, product measure, expectation, inequalities, convergence, law of large numbers, Radon-Nykodym theorem.</span>
 

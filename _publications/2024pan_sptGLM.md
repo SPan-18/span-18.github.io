@@ -7,7 +7,7 @@ excerpt: 'We develop Bayesian predictive stacking algorithm for analysis of non-
 date: 2024-02-17
 venue: 'arXiv preprint'
 slidesurl: 'https://doi.org/10.48550/arXiv.2406.04655'
-paperurl: 'http://span-18.github.io/files/pan2024sptstacking.bib'
+paperurl: /files/pan2024sptstacking.txt
 citation: '<b>Pan, S.</b>, Zhang, L., Bradley, J. R., & Banerjee, S. (2024). &quot;Bayesian inference for spatial-temporal
 non-Gaussian data using predictive stacking.&quot; <i>arXiv:stat.ME</i>.'
 ---
