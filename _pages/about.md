@@ -11,7 +11,7 @@ redirect_from:
 <ul style="padding-left: 0;">
   <li style="list-style: none; display: flex; align-items: flex-start; margin-bottom: 25px;">
     <div style="margin-right: 10px; flex-shrink: 0;">
-      <img src="../images/ucla-logo2.png" alt="Bullet 1" width="60" height="60">
+      <img src="../images/ucla-logo1.png" alt="Bullet 1" width="60" height="60">
     </div>
     <div style="text-indent: -10px; padding-left: 10px;">
       <b>Ph.D.</b>, <i>Biostatistics</i>, <a href="https://ph.ucla.edu/departments/biostatistics">University of California Los Angeles</a>, USA, 2025 <span style="font-size: smaller; color: grey">(expected)</span><br>
