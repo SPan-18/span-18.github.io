@@ -50,16 +50,37 @@ redirect_from:
 - **B.Stat (Honours)**, *Statistics*, [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata, India, 2019<img src="../images/isi-logo.png" align="right" alt="ISI Logo" width="45" height="45" style="margin-right: 10px; margin-left: 10px;"/> -->
 
 ## Research Interests
-- Bayesian hierarchical modeling and inference
-- Analysis of spatial, and, spatial-temporal data
+<!-- - Bayesian hierarchical modeling and inference -->
 - Integrative Bayesian learning
+- Analysis of spatial, and, spatial-temporal data
 - Bayesian modeling of dynamical systems
 - Statistical computing and development of open-source software
 
-## News
-- *Oct 8, 2024:* Our new package **spStack** is now available on [CRAN](https://cran.r-project.org/package=spStack)!
+## Academic Awards
+- Dissertation Year Award 2024-25, *UCLA Division of Graduate Education*<br>
+<span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 20,000 in fellowship & USD 19,487 in tuition grant</span>
+- Summer Mentored Research Fellowship 2022 & 2024, *UCLA*<br>
+<span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 6,000 in fellowship each year</span>
+- University Fellowship 2021-22, *UCLA Graduate Division*<br>
+<span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 14,863 in fellowship</span>
+- Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
+
+## Recent Events
+- <span style="font-size: smaller; color: grey">2024, Oct 8</span>&nbsp; Our new R package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
+
+<!-- * <span style="font-size: smaller; color: grey">2024, Oct 4</span>&nbsp; The spStack [website](https://span-18.github.io/spStack-dev/) is now live! -->
+
+- <span style="font-size: smaller; color: grey">2024, Sep 29</span>&nbsp; Article published in [Annals of Work Exposures and Health](https://doi.org/10.1093/annweh/wxae061).
+
+- <span style="font-size: smaller; color: grey">2024, Jun 26</span>&nbsp; *Selected for the [UCLA Dissertation Year Award 2024-25](https://grad.ucla.edu/funding/financial-aid/funding-for-continuing-students/dissertation-year-fellowship/)* :mortar_board:
+
+- <span style="font-size: smaller; color: grey">2024, Jun 7</span>&nbsp; New preprint out on [arXiv](https://arxiv.org/abs/2406.04655).
+
+- <span style="font-size: smaller; color: grey">2023, Dec 12</span>&nbsp; Advanced to candidacy for the doctoral degree.
+
+<!-- - *2024, Oct 8:* Our new package **spStack** is now available on [CRAN](https://cran.r-project.org/package=spStack)!
 - *Oct 4, 2024:* The spStack [website](https://span-18.github.io/spStack-dev/) is now live!
 - *Sep 29, 2024:* Article published in [Annals of Work Exposures and Health](https://doi.org/10.1093/annweh/wxae061).
-- *Jun 26, 2024:* Selected to receive the [UCLA Dissertation Year Award](https://grad.ucla.edu/funding/financial-aid/funding-for-continuing-students/dissertation-year-fellowship/).
+- *Jun 26, 2024:* Selected for the [UCLA Dissertation Year Award](https://grad.ucla.edu/funding/financial-aid/funding-for-continuing-students/dissertation-year-fellowship/) :mortar_board:
 - *Jun 7, 2024:* New preprint out on [arXiv](https://arxiv.org/abs/2406.04655).
-- *Dec 12, 2023:* Advanced to candidacy for the doctoral degree.
+- *Dec 12, 2023:* Advanced to candidacy for the doctoral degree. -->
