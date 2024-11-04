@@ -60,13 +60,13 @@ redirect_from:
 - Dissertation Year Award 2024-25, *UCLA Division of Graduate Education*<br>
 <span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 20,000 in fellowship & USD 19,487 in tuition grant</span>
 - Summer Mentored Research Fellowship 2022 & 2024, *UCLA*<br>
-<span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 6,000 in fellowship each year</span>
+<span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 12,000 total in fellowship over two summers</span>
 - University Fellowship 2021-22, *UCLA Graduate Division*<br>
 <span style="font-size: smaller; color: grey; text-indent: -10px; padding-left: 10px;">USD 14,863 in fellowship</span>
 - Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
 
 ## Recent Events
-- <span style="font-size: smaller; color: grey">2024, Oct 8</span>&nbsp; Our new R package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
+- <span style="font-size: smaller; color: grey">2024, Oct 8</span>&nbsp; Our new <span style="font-family: 'Courier New', monospace;">R</span> package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
 
 <!-- * <span style="font-size: smaller; color: grey">2024, Oct 4</span>&nbsp; The spStack [website](https://span-18.github.io/spStack-dev/) is now live! -->
 
