@@ -11,7 +11,7 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-### UCLA
+## UCLA <span style="font-size: small; color: grey; padding-left: 10px;">2021 -- present</span>
 - **Teaching Assistant**, Department of Biostatistics, UCLA
   - *Biostatistics 250C: Multivariate Biostatistics*, Instructor: [Prof. Donatello Telesca](https://donatello-telesca.com/)<br />
 <span class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{"Spring 2024"}}</span><br />
@@ -34,7 +34,7 @@ author_profile: true
 <span class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{"Winter 2022, Winter 2023"}}</span><br />
 <span style="font-size: smaller">Topics in measure theoretic probability including random variables, product measure, expectation, inequalities, convergence, law of large numbers, Radon-Nykodym theorem.</span>
 
-### India
-- **Instructor for Mathematics Competitions**, RKMV Narendrapur<br />
+## India <span style="font-size: small; color: grey; padding-left: 10px;">2016 -- 2021</span>
+- **Instructor for Mathematics Competitions**, [RKMV Narendrapur](https://www.rkmvnarendrapur.org/)<br />
 <span class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{"2019-2021"}}</span><br />
 <span style="font-size: smaller">Taught highly motivated pre-college students advanced topics in Mathematics including combinatorics, number theory, polynomials, inequalities and introductory real analysis to help them prepare for competitive college entrance exams like Indian Statistical Institute ([ISI](https://www.isical.ac.in/)), Chennai Mathematical Institute ([CMI](https://www.cmi.ac.in/)), etc.</span>
