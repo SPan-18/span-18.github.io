@@ -5,7 +5,7 @@ category: preprints
 permalink: /publication/2024-sptStack
 excerpt: 'This manuscript introduces the R package spStack that delivers Bayesian inferece for geospatial data using predictive stacking.'
 date: 2024-11-13
-venue: 'arXiv preprint'
+venue: 'Preprint'
 slidesurl: 'https://doi.org/(in-process)'
 paperurl: /files/spStack.txt
 citation: '<b>Pan, S.</b> & Banerjee, S. (2024). &quot;spStack: Practical Bayesian Geostatistics Using Predictive Stacking in R.&quot; <i>arXiv:stat.CO</i>.'
