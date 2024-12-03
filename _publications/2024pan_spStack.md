@@ -2,7 +2,7 @@
 title: "spStack: Practical Bayesian Geostatistics Using Predictive Stacking in R"
 collection: publications
 category: preprints
-permalink: /publication/2024-sptStack
+permalink: /publication/2024-spStack
 excerpt: 'This manuscript introduces the R package spStack that delivers Bayesian inferece for geospatial data using predictive stacking.'
 date: 2024-11-13
 venue: 'Preprint'
