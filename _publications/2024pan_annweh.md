@@ -2,7 +2,7 @@
 title: "Bayesian hierarchical modeling and inference for mechanistic systems in industrial hygiene"
 collection: publications
 category: articles
-permalink: /publication/2024-mechIH
+permalink: /publications/2024-mechIH
 excerpt: 'A Bayesian state-space modeling framework that synthesizes information from the mechanistic system as well as the field data.'
 date: 2024-10-1
 venue: 'Annals of Work Exposures and Health'

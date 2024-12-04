@@ -2,7 +2,7 @@
 title: "Bayesian Inference for Spatial-Temporal Non-Gaussian Data Using Predictive Stacking"
 collection: publications
 category: preprints
-permalink: /publication/2024-sptGLMstack
+permalink: /publications/2024-sptGLMstack
 excerpt: 'We develop Bayesian predictive stacking algorithm for analysis of non-Gaussian geospatial data.'
 date: 2024-02-17
 venue: 'arXiv preprint'
