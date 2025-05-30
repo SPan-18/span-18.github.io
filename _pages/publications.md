@@ -23,7 +23,7 @@ inference for mechanistic systems in industrial hygiene. *Annals of Work Exposur
 
 ## Preprints
 
-- **Pan, S.**, Banerjee, S. (2025). Bayesian inference for spatially-temporally mislaigned data using
+- **Pan, S.**, Banerjee, S. (2025). Bayesian inference for spatially-temporally misaligned data using
 predictive stacking. *arXiv preprint* <a href="{{ base_path }}/publications/2025-stackingCOS" style="display:inline-block; white-space:nowrap; background:#e6f0ff; color:#003366; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:0.85em;">More Info</a>
 <br><small>
   <a href="/files/stackingCOS.pdf" style="background:#f2f2f2; border:1px solid #800000; color:#800000; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:0.85em;">Paper</a>
