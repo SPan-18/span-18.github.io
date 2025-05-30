@@ -1,5 +1,5 @@
 @article{pan2024annweh,
-    author = {\textbf{Pan, S.} and Das, Darpan and Ramachandran, Gurumurthy and Banerjee, Sudipto},
+    author = {Pan, Soumyakanti and Das, Darpan and Ramachandran, Gurumurthy and Banerjee, Sudipto},
     title = "{Bayesian hierarchical modeling and inference for mechanistic systems in industrial hygiene}",
     journal = {Annals of Work Exposures and Health},
     volume = {68},

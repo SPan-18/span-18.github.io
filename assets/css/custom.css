@@ -1,0 +1,15 @@
+a.pub-link {
+  display: inline-block !important;
+  padding: 2px 8px !important;
+  margin-right: 6px;
+  font-size: 0.85em;
+  border: 1px solid #800000;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: #800000 !important;
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  background-color: #eaeaea;
+}
