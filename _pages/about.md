@@ -67,7 +67,7 @@ redirect_from:
 - Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
 
 ## Recent Events
-- <span style="font-size: smaller; color: grey">2025, Jun 2</span>&nbsp; New preprint out on [arXiv](https://arxiv.org/abs/2505.24397).
+- <span style="font-size: smaller; color: grey">2025, Jun 2</span>&nbsp; New preprint on spatial-temporal misalignment out on [arXiv](https://arxiv.org/abs/2505.24397).
 
 - <span style="font-size: smaller; color: grey">2024, Oct 8</span>&nbsp; Our new <span style="font-family: 'Courier New', monospace;">R</span> package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
 
