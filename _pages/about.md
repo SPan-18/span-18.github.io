@@ -52,9 +52,10 @@ redirect_from:
 ## Research Interests
 <!-- - Bayesian hierarchical modeling and inference -->
 - Integrative Bayesian learning
-- Analysis of spatial, and, spatial-temporal data
+- Analysis of complex spatial, and spatial-temporal data
 - Bayesian modeling of dynamical systems
-- Statistical computing and development of open-source software
+- High-performance statistical computing
+- Development of open-source statistical softwares
 
 ## Academic Awards
 - Dissertation Year Award 2024-25, *UCLA Division of Graduate Education*<br>
@@ -66,6 +67,8 @@ redirect_from:
 - Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
 
 ## Recent Events
+- <span style="font-size: smaller; color: grey">2025, Jun 2</span>&nbsp; New preprint out on [arXiv](https://arxiv.org/abs/2505.24397).
+
 - <span style="font-size: smaller; color: grey">2024, Oct 8</span>&nbsp; Our new <span style="font-family: 'Courier New', monospace;">R</span> package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
 
 <!-- * <span style="font-size: smaller; color: grey">2024, Oct 4</span>&nbsp; The spStack [website](https://span-18.github.io/spStack-dev/) is now live! -->

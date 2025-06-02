@@ -2,8 +2,8 @@
       title={Bayesian Inference for Spatially-Temporally Misaligned Data Using Predictive Stacking},
       author={Soumyakanti Pan and Sudipto Banerjee},
       year={2025},
-      eprint={XX},
+      eprint={2505.24397},
       archivePrefix={arXiv},
-      primaryClass={stat.AP},
-      doi={XX}
+      primaryClass={stat.ME},
+      doi={10.48550/arXiv.2505.24397},
 }
