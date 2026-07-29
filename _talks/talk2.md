@@ -9,4 +9,4 @@ date: 2023-08-08
 location: "Toronto, Canada"
 ---
 
-Session title: *Recent advances in uncertainty quantification for complex systems*.
+Session title: _Recent advances in uncertainty quantification for complex systems_.

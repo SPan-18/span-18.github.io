@@ -33,7 +33,7 @@ cv:
         score: ""
         courses: ""
         highlights:
-          - "Thesis: \"Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data\""
+          - 'Thesis: "Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data"'
           - "Advisor: Prof. Sudipto Banerjee"
 
       - institution: Indian Statistical Institute
@@ -44,7 +44,7 @@ cv:
         start_date: 2019
         end_date: 2021
         highlights:
-          - "Thesis: \"Distribution-free Correlation Based Tests to Differentiate Between Related Populations\""
+          - 'Thesis: "Distribution-free Correlation Based Tests to Differentiate Between Related Populations"'
           - "Advisor: Prof. Saurabh Ghosh"
 
       - institution: Indian Statistical Institute

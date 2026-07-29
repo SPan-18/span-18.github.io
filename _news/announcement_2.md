@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new R package *spStack* is now available on [CRAN](https://cran.r-project.org/package=spStack).
+Our new R package _spStack_ is now available on [CRAN](https://cran.r-project.org/package=spStack).

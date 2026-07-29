@@ -33,14 +33,14 @@ My research interests include integrative Bayesian learning, analysis of complex
 ## Education
 
 - **Ph.D., Biostatistics**, [University of California, Los Angeles](https://ph.ucla.edu/departments/biostatistics), USA, 2025 (expected)
-  Thesis: *Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data*. Advisor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)
+  Thesis: _Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data_. Advisor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)
 - **M.Stat, Statistics**, [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata, India, 2021
-  Thesis: *Distribution-free Correlation Based Tests to Differentiate Between Related Populations*. Advisor: [Prof. Saurabh Ghosh](https://www.isical.ac.in/~saurabh/)
+  Thesis: _Distribution-free Correlation Based Tests to Differentiate Between Related Populations_. Advisor: [Prof. Saurabh Ghosh](https://www.isical.ac.in/~saurabh/)
 - **B.Stat (Honours), Statistics**, [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata, India, 2019
 
 ## Academic Awards
 
-- Dissertation Year Award 2024-25, *UCLA Division of Graduate Education* — USD 20,000 in fellowship & USD 19,487 in tuition grant
-- Summer Mentored Research Fellowship 2022 & 2024, *UCLA* — USD 12,000 total in fellowship over two summers
-- University Fellowship 2021-22, *UCLA Graduate Division* — USD 14,863 in fellowship
+- Dissertation Year Award 2024-25, _UCLA Division of Graduate Education_ — USD 20,000 in fellowship & USD 19,487 in tuition grant
+- Summer Mentored Research Fellowship 2022 & 2024, _UCLA_ — USD 12,000 total in fellowship over two summers
+- University Fellowship 2021-22, _UCLA Graduate Division_ — USD 14,863 in fellowship
 - Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
