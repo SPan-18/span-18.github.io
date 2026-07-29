@@ -1,189 +1,117 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Soumyakanti Pan
+  label: Ph.D. Candidate in Biostatistics
+  email: span18@ucla.edu
+  location: Los Angeles, CA
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Ph.D. candidate in Biostatistics at UCLA working on Bayesian modeling and inference for complex dependent non-Gaussian data.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: SPan-18
+    - network: Google Scholar
+      username: 7IUdEDYAAAAJ
+    - network: ORCID
+      username: 0009-0005-9889-7112
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
+    street: ""
+    city: Los Angeles
     region: California
-    postalCode: CA 94115
+    postalCode: ""
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: University of California, Los Angeles
+        location: Los Angeles, CA, USA
+        url: https://ph.ucla.edu/departments/biostatistics
+        area: Biostatistics
+        studyType: Ph.D.
+        start_date: 2021
+        end_date: 2025
         score: ""
-        courses: "Theory of Relativity"
+        courses: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: \"Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data\""
+          - "Advisor: Prof. Sudipto Banerjee"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Indian Statistical Institute
+        location: Kolkata, India
+        url: https://www.isical.ac.in/
+        area: Statistics
+        studyType: M.Stat
+        start_date: 2019
+        end_date: 2021
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: \"Distribution-free Correlation Based Tests to Differentiate Between Related Populations\""
+          - "Advisor: Prof. Saurabh Ghosh"
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+      - institution: Indian Statistical Institute
+        location: Kolkata, India
+        url: https://www.isical.ac.in/
+        area: Statistics
+        studyType: B.Stat (Honours)
+        start_date: 2016
+        end_date: 2019
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: Dissertation Year Award 2024-25
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          - UCLA Division of Graduate Education
+        date: 2024-06-26
+        awarder: UCLA Division of Graduate Education
+        summary: USD 20,000 in fellowship & USD 19,487 in tuition grant.
 
-      - title: Max Planck Medal
+      - title: Summer Mentored Research Fellowship
         authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - UCLA
+        date: 2022-06-01
+        awarder: UCLA
+        summary: Awarded in 2022 and 2024; USD 12,000 total in fellowship over two summers.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: University Fellowship 2021-22
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - UCLA Graduate Division
+        date: 2021-09-01
+        awarder: UCLA Graduate Division
+        summary: USD 14,863 in fellowship.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: Institute Stipend and Contingency Grant
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Indian Statistical Institute
+        date: 2016-07-01
+        awarder: Indian Statistical Institute
+        summary: Stipend and yearly contingency grant, 2016-2021.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+    Talks:
+      - name: Bayesian Inference for Spatial-Temporal Count Data Using Predictive Stacking
+        summary: "Poster. Theory and Foundations of Statistics in the Era of Big Data 2024, Tallahassee, Florida."
+        start_date: 2024-04-20
+        end_date: 2024-04-20
+
+      - name: Predictive Stacking in Bayesian Hierarchical Models for Spatial Data from the Natural Exponential Family
+        summary: "Short Talk. The Bayesian Young Statisticians Meeting (j-ISBA), Virtual."
+        start_date: 2023-11-13
+        end_date: 2023-11-13
+
+      - name: "Bayesian Hierarchical Modeling and Inference for Mechanistic Systems: An Application in Industrial Hygiene"
+        summary: "Topic Contributed Paper session. Joint Statistical Meetings, Toronto, Canada."
+        start_date: 2023-08-08
+        end_date: 2023-08-08
+
+      - name: Uncertainty Quantification of Dynamical Systems in Industrial Hygiene
+        summary: "Talk. UCLA-UCI-KAUST Meeting, UCLA, Los Angeles, California."
+        start_date: 2023-03-27
+        end_date: 2023-03-27
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Statistical Computing
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "R, C++, Fortran, HPC/parallel computing"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Bayesian Methods
+        level: Advanced
+        icon: fa-solid fa-chart-line
+        keywords: "Bayesian hierarchical modeling, spatial/spatial-temporal statistics, predictive stacking, MCMC"

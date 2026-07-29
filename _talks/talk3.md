@@ -1,6 +1,7 @@
 ---
 title: "Predictive Stacking in Bayesian Hierarchical Models for Spatial Data from the Natural Exponential Family"
 collection: talks
+layout: page
 type: "Short Talk"
 permalink: /talks/baysm-2023
 venue: "The Bayesian Young Statisticians Meeting, <i>j-ISBA</i>"

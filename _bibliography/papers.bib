@@ -1,115 +1,67 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@article{pan2024mechih,
+  abbr        = {AWEH},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {Bayesian hierarchical modeling and inference for mechanistic systems in industrial hygiene},
+  author      = {Pan, Soumyakanti and Das, Debjyoti and Ramachandran, Gurumurthy and Banerjee, Sudipto},
+  journal     = {Annals of Work Exposures and Health},
+  volume      = {68},
+  number      = {8},
+  pages       = {834--845},
+  year        = {2024},
+  doi         = {10.1093/annweh/wxae061},
+  html        = {https://doi.org/10.1093/annweh/wxae061},
+  pdf         = {pan2024-mechih.pdf},
+  code        = {https://github.com/SPan-18/RailcarExposureModelling},
+  preview     = {mechih.jpg},
+  selected    = {true},
+  abstract    = {A series of experiments in stationary and moving passenger rail cars were conducted to measure removal rates of particles in the size ranges of SARS-CoV-2 viral aerosols and the air changes per hour provided by existing and modified air handling systems. Such methods for exposure assessments are customarily based on mechanistic models derived from physical laws of particle movement that are deterministic and do not account for measurement errors inherent in data collection. The resulting analysis compromises on reliably learning about mechanistic factors such as ventilation rates, aerosol generation rates, and filtration efficiencies from field measurements. This manuscript develops a Bayesian state-space modeling framework that synthesizes information from the mechanistic system as well as the field data by deriving a stochastic model from finite difference approximations of differential equations explaining particle concentrations. Our inferential framework trains the mechanistic system using the field measurements from the chamber experiments and delivers reliable estimates of the underlying physical process with fully model-based uncertainty quantification.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@article{pan2024sptglmstack,
+  abbr        = {arXiv},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {Bayesian Inference for Spatial-Temporal Non-{G}aussian Data Using Predictive Stacking},
+  author      = {Pan, Soumyakanti and Zhang, Lu and Bradley, Jonathan R. and Banerjee, Sudipto},
+  journal     = {arXiv preprint arXiv:2406.04655},
+  year        = {2024},
+  doi         = {10.48550/arXiv.2406.04655},
+  html        = {https://doi.org/10.48550/arXiv.2406.04655},
+  pdf         = {pan2024-sptglmstack.pdf},
+  code        = {https://github.com/SPan-18/stvcGLMstack},
+  preview     = {sptglmstack.png},
+  selected    = {true},
+  abstract    = {Analysing non-Gaussian spatial-temporal data typically requires introducing spatial dependence in generalised linear models through the link function of an exponential family distribution. However, unlike in Gaussian likelihoods, inference is considerably encumbered by the inability to analytically integrate out the random effects and reduce the dimension of the parameter space. We devise an approach that obviates these issues by exploiting generalised conjugate multivariate distribution theory for exponential families, which enables exact sampling from analytically available posterior distributions conditional upon some fixed process parameters. We evaluate inferential performance on simulated data, compare with fully Bayesian inference using Markov chain Monte Carlo and apply our proposed method to analyse spatially-temporally referenced avian count data from the North American Breeding Bird Survey database.}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@misc{pan2024spstack,
+  abbr        = {Preprint},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {spStack: Practical {B}ayesian Geostatistics Using Predictive Stacking in {R}},
+  author      = {Pan, Soumyakanti and Banerjee, Sudipto},
+  year        = {2024},
+  pdf         = {pan2024-spstack.pdf},
+  code        = {https://github.com/SPan-18/spStack-dev/},
+  website     = {https://span-18.github.io/spStack-dev/},
+  preview     = {spstack.png},
+  selected    = {true},
+  abstract    = {Statistical modeling and analysis for spatially oriented point-referenced outcomes play a crucial role in diverse scientific applications such as earth and environmental sciences, ecology, epidemiology, and economics. In this article, we introduce the R package spStack that delivers fast Bayesian inference for a class of geostatistical models, where we obviate weak identifiability issues in spatial process parameters by sampling from analytically available posterior distributions conditional upon candidate values of the spatial process parameters and, subsequently, assimilate inference from these individual posterior distributions using Bayesian predictive stacking. Our proposed algorithm is executable in parallel, drastically improving runtime over traditional MCMC.}
 }
 
-@book{przibram1967letters,
+@article{pan2025stackingcos,
+  abbr        = {arXiv},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {Bayesian Inference for Spatially-Temporally Misaligned Data Using Predictive Stacking},
+  author      = {Pan, Soumyakanti and Banerjee, Sudipto},
+  journal     = {arXiv preprint arXiv:2505.24397},
+  year        = {2025},
+  doi         = {10.48550/arXiv.2505.24397},
+  html        = {https://doi.org/10.48550/arXiv.2505.24397},
+  pdf         = {pan2025-stackingcos.pdf},
+  code        = {https://github.com/SPan-18/AsthmaOzoneCA},
+  preview     = {stackingcos.jpg},
+  selected    = {true},
+  abstract    = {Air pollution remains a major environmental risk factor that is often associated with adverse health outcomes. However, quantifying and evaluating its effects on human health is challenging due to the complex nature of exposure data. This article develops a Bayesian hierarchical model to analyze spatially-temporally misaligned exposure and health outcome data. We introduce Bayesian predictive stacking, which optimally combines multiple predictive spatial-temporal models and avoids iterative estimation algorithms such as Markov chain Monte Carlo. We apply our proposed method to study the effects of ozone on asthma in the state of California.}
 }

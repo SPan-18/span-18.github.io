@@ -1,6 +1,7 @@
 ---
 title: "Uncertainty Quantification of Dynamical Systems in Industrial Hygiene"
 collection: talks
+layout: page
 type: "Talk"
 permalink: /talks/ucla-uci-kaust-talk-2023
 venue: "UCLA-UCI-KAUST Meeting"

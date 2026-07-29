@@ -1,6 +1,7 @@
 ---
 title: "Bayesian Inference for Spatial-Temporal Count Data Using Predictive Stacking"
 collection: talks
+layout: page
 type: "Poster"
 permalink: /talks/fsu-iisa-2024
 venue: "Theory and Foundations of Statistics in the Era of Big Data 2024"

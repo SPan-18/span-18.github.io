@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Ph.D. candidate, <a href='https://ph.ucla.edu/departments/biostatistics'>UCLA Biostatistics</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>UCLA Biostatistics</p>
+    <p>Los Angeles, CA</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +21,26 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. candidate in Biostatistics at the [University of California, Los Angeles](https://ph.ucla.edu/departments/biostatistics), advised by [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/). Before UCLA, I completed my M.Stat and B.Stat (Honours) in Statistics at the [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests include integrative Bayesian learning, analysis of complex spatial and spatial-temporal data, Bayesian modeling of dynamical systems, high-performance statistical computing, and development of open-source statistical software.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Education
+
+- **Ph.D., Biostatistics**, [University of California, Los Angeles](https://ph.ucla.edu/departments/biostatistics), USA, 2025 (expected)
+  Thesis: *Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data*. Advisor: [Prof. Sudipto Banerjee](http://sudipto.bol.ucla.edu/)
+- **M.Stat, Statistics**, [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata, India, 2021
+  Thesis: *Distribution-free Correlation Based Tests to Differentiate Between Related Populations*. Advisor: [Prof. Saurabh Ghosh](https://www.isical.ac.in/~saurabh/)
+- **B.Stat (Honours), Statistics**, [Indian Statistical Institute](https://www.isical.ac.in/), Kolkata, India, 2019
+
+## Academic Awards
+
+- Dissertation Year Award 2024-25, *UCLA Division of Graduate Education* — USD 20,000 in fellowship & USD 19,487 in tuition grant
+- Summer Mentored Research Fellowship 2022 & 2024, *UCLA* — USD 12,000 total in fellowship over two summers
+- University Fellowship 2021-22, *UCLA Graduate Division* — USD 14,863 in fellowship
+- Indian Statistical Institute stipend and yearly contingency grant, 2016-2021
