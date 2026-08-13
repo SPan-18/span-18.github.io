@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/SPan_Academic_CV.pdf # path to your CV PDF file
+email: span18@ucla.edu # your email address
+github_username: SPan-18 # your GitHub user name
+orcid_id: 0009-0005-9889-7112 # your ORCID ID
+scholar_userid: 7IUdEDYAAAAJ # your Google Scholar ID
+research_gate_profile: Soumyakanti-Pan # your ResearchGate profile
+rss_icon: true # comment this line to hide the RSS icon

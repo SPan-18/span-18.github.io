@@ -1,0 +1,147 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    {% if page.profile %}
+      <div id="about-profile-col" class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+
+        <!-- News (moved below the photo, in its own column, to save vertical space) -->
+        {% if page.announcements and page.announcements.enabled %}
+          <div class="profile-news">
+            <h2>
+              <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+            </h2>
+            {% include news.liquid limit=true %}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div id="about-content-col" class="clearfix">{{ content }}</div>
+
+    {% if page.profile %}
+      <script>
+        (function () {
+          function computeAndApply() {
+            var profile = document.getElementById('about-profile-col');
+            var content = document.getElementById('about-content-col');
+            if (!profile || !content) return;
+
+            var headings = content.querySelectorAll(':scope > h2');
+            if (!headings.length) return;
+
+            // Reset to the CSS baseline (clamp() in _themes.scss) before
+            // measuring, so repeated runs (resize, etc.) don't compound.
+            headings.forEach(function (h) {
+              h.style.marginTop = '';
+            });
+
+            var profileHeight = profile.getBoundingClientRect().height;
+            var contentHeight = content.getBoundingClientRect().height;
+            var extra = profileHeight - contentHeight;
+
+            // Content is already as tall as (or taller than) the photo
+            // column (e.g. narrow/mobile viewport) - keep the CSS default.
+            if (extra <= 0) return;
+
+            var perGap = extra / headings.length;
+            // Same bounds as the CSS clamp() fallback, so JS can only
+            // fine-tune within a sane range, never produce silly spacing.
+            var minGap = 24; // 1.5rem at a 16px root font size
+            var maxGap = 56; // 3.5rem at a 16px root font size
+            perGap = Math.max(minGap, Math.min(maxGap, perGap));
+
+            headings.forEach(function (h) {
+              h.style.marginTop = perGap + 'px';
+            });
+          }
+
+          function debounce(fn, wait) {
+            var t;
+            return function () {
+              clearTimeout(t);
+              t = setTimeout(fn, wait);
+            };
+          }
+
+          var recalc = debounce(computeAndApply, 150);
+
+          // Run once everything (including the profile image) has loaded,
+          // so the measured heights are accurate; fall back to running
+          // immediately if the page already finished loading by the time
+          // this script executes.
+          if (document.readyState === 'complete') {
+            computeAndApply();
+          } else {
+            window.addEventListener('load', computeAndApply);
+          }
+          window.addEventListener('resize', recalc);
+        })();
+      </script>
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center_margin.liquid %}
+      {% else %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    {% endif %}
+  </article>
+</div>

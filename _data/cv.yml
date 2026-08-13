@@ -1,0 +1,117 @@
+cv:
+  name: Soumyakanti Pan
+  label: Ph.D. Candidate in Biostatistics
+  email: span18@ucla.edu
+  location: Los Angeles, CA
+  image: ""
+  summary: Ph.D. candidate in Biostatistics at UCLA working on Bayesian modeling and inference for complex dependent non-Gaussian data.
+
+  social_networks:
+    - network: GitHub
+      username: SPan-18
+    - network: Google Scholar
+      username: 7IUdEDYAAAAJ
+    - network: ORCID
+      username: 0009-0005-9889-7112
+
+  address:
+    street: ""
+    city: Los Angeles
+    region: California
+    postalCode: ""
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of California, Los Angeles
+        location: Los Angeles, CA, USA
+        url: https://ph.ucla.edu/departments/biostatistics
+        area: Biostatistics
+        studyType: Ph.D.
+        start_date: 2021
+        end_date: 2025
+        score: ""
+        courses: ""
+        highlights:
+          - 'Thesis: "Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data"'
+          - "Advisor: Prof. Sudipto Banerjee"
+
+      - institution: Indian Statistical Institute
+        location: Kolkata, India
+        url: https://www.isical.ac.in/
+        area: Statistics
+        studyType: M.Stat
+        start_date: 2019
+        end_date: 2021
+        highlights:
+          - 'Thesis: "Distribution-free Correlation Based Tests to Differentiate Between Related Populations"'
+          - "Advisor: Prof. Saurabh Ghosh"
+
+      - institution: Indian Statistical Institute
+        location: Kolkata, India
+        url: https://www.isical.ac.in/
+        area: Statistics
+        studyType: B.Stat (Honours)
+        start_date: 2016
+        end_date: 2019
+
+    Awards:
+      - title: Dissertation Year Award 2024-25
+        authors:
+          - UCLA Division of Graduate Education
+        date: 2024-06-26
+        awarder: UCLA Division of Graduate Education
+        summary: USD 20,000 in fellowship & USD 19,487 in tuition grant.
+
+      - title: Summer Mentored Research Fellowship
+        authors:
+          - UCLA
+        date: 2022-06-01
+        awarder: UCLA
+        summary: Awarded in 2022 and 2024; USD 12,000 total in fellowship over two summers.
+
+      - title: University Fellowship 2021-22
+        authors:
+          - UCLA Graduate Division
+        date: 2021-09-01
+        awarder: UCLA Graduate Division
+        summary: USD 14,863 in fellowship.
+
+      - title: Institute Stipend and Contingency Grant
+        authors:
+          - Indian Statistical Institute
+        date: 2016-07-01
+        awarder: Indian Statistical Institute
+        summary: Stipend and yearly contingency grant, 2016-2021.
+
+    Talks:
+      - name: Bayesian Inference for Spatial-Temporal Count Data Using Predictive Stacking
+        summary: "Poster. Theory and Foundations of Statistics in the Era of Big Data 2024, Tallahassee, Florida."
+        start_date: 2024-04-20
+        end_date: 2024-04-20
+
+      - name: Predictive Stacking in Bayesian Hierarchical Models for Spatial Data from the Natural Exponential Family
+        summary: "Short Talk. The Bayesian Young Statisticians Meeting (j-ISBA), Virtual."
+        start_date: 2023-11-13
+        end_date: 2023-11-13
+
+      - name: "Bayesian Hierarchical Modeling and Inference for Mechanistic Systems: An Application in Industrial Hygiene"
+        summary: "Topic Contributed Paper session. Joint Statistical Meetings, Toronto, Canada."
+        start_date: 2023-08-08
+        end_date: 2023-08-08
+
+      - name: Uncertainty Quantification of Dynamical Systems in Industrial Hygiene
+        summary: "Talk. UCLA-UCI-KAUST Meeting, UCLA, Los Angeles, California."
+        start_date: 2023-03-27
+        end_date: 2023-03-27
+
+    Skills:
+      - name: Statistical Computing
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "R, C++, Fortran, HPC/parallel computing"
+
+      - name: Bayesian Methods
+        level: Advanced
+        icon: fa-solid fa-chart-line
+        keywords: "Bayesian hierarchical modeling, spatial/spatial-temporal statistics, predictive stacking, MCMC"

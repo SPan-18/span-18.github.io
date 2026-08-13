@@ -1,0 +1,6 @@
+name: "CodeQL config"
+
+paths-ignore:
+  # Legacy pre-migration debug page, excluded from the Jekyll build itself
+  # (see `exclude:` in _config.yml) and not served on the live site.
+  - talkmap/**
