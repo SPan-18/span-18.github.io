@@ -1,33 +1,13 @@
 name: Visual regression checks
 
+# Disabled from automatic triggers: this workflow diffs against upstream
+# al-folio tag `v0.16.3`, which doesn't exist in this repo's history (this
+# is a personalized fork, not a clone with upstream tags), so it always
+# failed at the `git worktree add ../al-folio-baseline v0.16.3` step.
+# Kept available via manual dispatch in case it's worth wiring up against
+# a real baseline (e.g. a tagged commit in this repo's own history) later.
 on:
-  pull_request:
-    branches: [main, master, v1.0-dev]
-    paths:
-      - "_config.yml"
-      - "_data/**"
-      - "_bibliography/**"
-      - "_pages/**"
-      - "_posts/**"
-      - "_projects/**"
-      - "assets/**"
-      - "test/visual/**"
-      - ".github/workflows/visual-regression.yml"
-      - "package.json"
-      - "package-lock.json"
-      - "Gemfile"
-      - "Gemfile.lock"
-  push:
-    branches: [v1.0-dev]
-    paths:
-      - "_config.yml"
-      - "_data/**"
-      - "_bibliography/**"
-      - "_pages/**"
-      - "_posts/**"
-      - "_projects/**"
-      - "assets/**"
-      - "test/visual/**"
+  workflow_dispatch:
       - ".github/workflows/visual-regression.yml"
       - "package.json"
       - "package-lock.json"
