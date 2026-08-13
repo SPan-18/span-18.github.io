@@ -8,11 +8,6 @@ name: Visual regression checks
 # a real baseline (e.g. a tagged commit in this repo's own history) later.
 on:
   workflow_dispatch:
-      - ".github/workflows/visual-regression.yml"
-      - "package.json"
-      - "package-lock.json"
-      - "Gemfile"
-      - "Gemfile.lock"
 
 jobs:
   visual-regression:
