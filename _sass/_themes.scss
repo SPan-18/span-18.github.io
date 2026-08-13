@@ -588,6 +588,24 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.badge-prepri
   color: #e2e8f0;
 }
 
+// On narrow screens, Bootstrap's col-sm-2 (thumbnail) and col-sm-8 (text)
+// both stack to full width below the sm breakpoint (576px), and the
+// preview image scales up to fill that now-full-width column, appearing
+// as a huge image above the title instead of a small thumbnail. Cap it
+// to a fixed small size and center it so it still reads as a thumbnail.
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .preview {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.75rem;
+  }
+
+  .publications ol.bibliography li .abbr {
+    text-align: center;
+  }
+}
+
 // One-time legend explaining the joint/equal-first-author "*" marker, shown
 // once above the bibliography list instead of repeating a note per entry.
 .co-first-legend {
