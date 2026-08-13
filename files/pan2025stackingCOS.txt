@@ -1,0 +1,9 @@
+@misc{pan2025stackingCOS,
+      title={Bayesian Inference for Spatially-Temporally Misaligned Data Using Predictive Stacking},
+      author={Soumyakanti Pan and Sudipto Banerjee},
+      year={2025},
+      eprint={2505.24397},
+      archivePrefix={arXiv},
+      primaryClass={stat.ME},
+      doi={10.48550/arXiv.2505.24397},
+}

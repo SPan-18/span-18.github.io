@@ -1,0 +1,9 @@
+@misc{pan2024_spStack,
+      title={{s}p{S}tack: {P}ractical {B}ayesian Geostatistics Using Predictive Stacking in {R}},
+      author={\textbf{Pan, S.} and Sudipto Banerjee},
+      year={2024},
+      eprint={in-process},
+      archivePrefix={arXiv},
+      primaryClass={stat.CO},
+      doi={in-process}
+}
