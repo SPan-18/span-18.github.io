@@ -63,7 +63,7 @@ I am a Postdoctoral Scholar in the [Department of Statistics](https://stat.uw.ed
   <li>
     <div class="award-row">
       <span>2026, Inductee, Delta Omega National Honorary Society in Public Health</span>
-      <a class="award-amount-badge" href="https://bcert.me/sxkdxqevu" target="_blank" rel="noopener">Certificate</a>
+      <!-- <a class="award-amount-badge" href="https://bcert.me/sxkdxqevu" target="_blank" rel="noopener">Certificate</a> -->
     </div>
   </li>
   <li>
