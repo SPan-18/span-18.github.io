@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Predictive Stacking in Bayesian Hierarchical Models for Spatial Data from the Natural Exponential Family"
 collection: talks
 layout: page

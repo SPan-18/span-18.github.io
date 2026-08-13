@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Bayesian Inference for Spatial-Temporal Count Data Using Predictive Stacking"
 collection: talks
 layout: page

@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Bayesian Hierarchical Modeling and Inference for Mechanistic Systems: An Application in Industrial Hygiene"
 collection: talks
 layout: page
