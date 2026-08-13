@@ -2,11 +2,12 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Open-source statistical software.
-nav: true
-nav_order: 3
-display_categories: [software]
+description: Other projects.
+nav: false
+nav_order: 2.5
+display_categories: [projects]
 horizontal: false
+published: true
 ---
 
 <!-- pages/projects.md -->

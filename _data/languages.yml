@@ -1,0 +1,20 @@
+R:
+  icon: fa-brands fa-r-project
+  color: "#276DC3"
+  text_color: "#ffffff"
+Python:
+  icon: fa-brands fa-python
+  color: "#FFD43B"
+  text_color: "#1e293b"
+C++:
+  icon: fa-solid fa-code
+  color: "#00599C"
+  text_color: "#ffffff"
+Fortran:
+  icon: fa-solid fa-code
+  color: "#734F96"
+  text_color: "#ffffff"
+Julia:
+  icon: fa-solid fa-code
+  color: "#9558B2"
+  text_color: "#ffffff"

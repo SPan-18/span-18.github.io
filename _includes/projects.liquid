@@ -1,0 +1,55 @@
+<div class="col">
+  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      {% if project.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=project.img
+          sizes = "250px"
+          alt="project thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        {% if project.cran or project.github %}
+          <div class="project-status-row">
+            {% if project.cran %}
+              <a href="{{ project.cran }}" class="project-status-badge cran"> <i class="fa-solid fa-cube"></i> CRAN </a>
+            {% endif %}
+            {% if project.github %}
+              <a href="{{ project.github }}" class="project-github-link" data-toggle="tooltip" title="Code Repository">
+                <i class="fa-brands fa-github"></i>
+                {% if project.github_stars %}
+                  <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                    <i class="fa-solid fa-star"></i>
+                    <span id="{{ project.github_stars }}-stars"></span>
+                  </span>
+                {% endif %}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if project.languages %}
+          <div class="project-languages">
+            {% for lang in project.languages %}
+              {% assign lang_data = site.data.languages[lang] %}
+              {% if lang_data %}
+                <span
+                  class="project-lang-badge"
+                  style="background-color: {{ lang_data.color }}; color: {{ lang_data.text_color | default: '#ffffff' }};"
+                >
+                  <i class="{{ lang_data.icon }}"></i> {{ lang }}
+                </span>
+              {% else %}
+                <span class="project-lang-badge"><i class="fa-solid fa-code"></i> {{ lang }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>

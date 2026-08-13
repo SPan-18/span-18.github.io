@@ -1,0 +1,76 @@
+<div class="news">
+  {% assign all_news = site.data.news | where_exp: 'item', 'item.show != false' %}
+  {% assign news = all_news | sort: 'date' | reverse %}
+  {% assign news_size = news | size %}
+  {% if news_size > 0 %}
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+
+    {% capture news_rows %}
+      {% assign last_year = "" %}
+      {% for item in news limit: news_limit %}
+        {% assign item_year = item.date | date: '%Y' %}
+        {% if item_year != last_year %}
+          {% unless forloop.first %}
+            </table>
+          {% endunless %}
+          <div class="news-year-heading">{{ item_year }}</div>
+          <table class="table table-sm table-borderless">
+          {% assign last_year = item_year %}
+        {% endif %}
+        <tr>
+          <th scope="row">{{ item.date | date: '%b %-d' }}</th>
+          <td>
+            {% if item.url %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% else %}
+              {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
+            {% endif %}
+          </td>
+        </tr>
+        {% if forloop.last %}
+          </table>
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+
+    {% assign do_autoscroll = false %}
+    {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+      {% assign do_autoscroll = true %}
+    {% endif %}
+
+    {% if do_autoscroll %}
+      <div class="news-scroll-viewport">
+        <div class="news-scroll-track">{{ news_rows }}</div>
+        <div class="news-scroll-track" aria-hidden="true">{{ news_rows }}</div>
+      </div>
+      <script>
+        (function () {
+          document.querySelectorAll('.news-scroll-viewport').forEach(function (vp) {
+            if (vp.dataset.autoscrollBound) return;
+            vp.dataset.autoscrollBound = 'true';
+            vp.addEventListener('mouseenter', function () {
+              vp.classList.add('is-hovering');
+            });
+            vp.addEventListener('mouseleave', function () {
+              vp.classList.remove('is-hovering');
+              vp.scrollTop = 0;
+              vp.querySelectorAll('.news-scroll-track').forEach(function (track) {
+                track.style.animation = 'none';
+                void track.offsetHeight; // force reflow so it restarts cleanly from 0%
+                track.style.animation = '';
+              });
+            });
+          });
+        })();
+      </script>
+    {% else %}
+      <div class="table-responsive">{{ news_rows }}</div>
+    {% endif %}
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

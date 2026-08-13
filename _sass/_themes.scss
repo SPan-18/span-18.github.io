@@ -1,0 +1,893 @@
+/*******************************************************************************
+ * Themes
+ * Local override of al_folio_core's _themes.scss.
+ * Only change: --global-theme-color / --global-hover-color use custom hex
+ * values instead of $purple-color, plus a .navbar-scoped override so nav
+ * tabs get a distinct darker navy instead of matching link color exactly.
+ ******************************************************************************/
+@use "variables" as v;
+@use "sass:color";
+
+@keyframes profile-news-autoscroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+:root {
+  color-scheme: light;
+  --global-bg-color: #{v.$white-color};
+  --global-code-bg-color: #{v.$code-bg-color-light};
+  --global-text-color: #{v.$black-color};
+  --global-text-color-light: #{v.$grey-color};
+  --global-theme-color: #2f6fb0; // links / primary accent - steel blue
+  --global-hover-color: #1c4f80; // link hover - darker steel blue
+  --global-hover-text-color: #{v.$white-color};
+  --global-footer-bg-color: #{v.$grey-color-dark};
+  --global-footer-text-color: #{v.$grey-color-light};
+  --global-footer-link-color: #{v.$white-color};
+  --global-distill-app-color: #{v.$grey-color};
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #{v.$white-color};
+  --global-highlight-color: #{v.$red-color-dark};
+  --global-back-to-top-bg-color: rgba(
+    #{color.channel(v.$black-color, "red", $space: rgb)},
+    #{color.channel(v.$black-color, "green", $space: rgb)},
+    #{color.channel(v.$black-color, "blue", $space: rgb)},
+    0.4
+  );
+  --global-back-to-top-text-color: #{v.$white-color};
+  --global-newsletter-bg-color: #{v.$white-color};
+  --global-newsletter-text-color: #{v.$black-color};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  #light-toggle-system {
+    display: inline-block;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  .only-light {
+    display: block;
+  }
+
+  .only-dark {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+    bottom: v.$back-to-top-bottom;
+    right: v.$back-to-top-right;
+    height: v.$back-to-top-height;
+    width: v.$back-to-top-width;
+    z-index: v.$back-to-top-z-index;
+  }
+
+  // Nav tabs get their own darker navy accent, distinct from link color.
+  // Scoping the variable inside .navbar means only elements within the
+  // navbar (which read var(--global-theme-color)) pick up this value;
+  // everything else on the page keeps the steel-blue value above.
+  .navbar {
+    --global-theme-color: #1e3a5f;
+    --global-hover-color: #16304d;
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #{v.$grey-color-dark};
+  --global-code-bg-color: #{v.$code-bg-color-dark};
+  --global-text-color: #{v.$grey-color-light};
+  --global-text-color-light: #{v.$grey-color};
+  --global-theme-color: #{v.$cyan-color};
+  --global-hover-color: #{v.$cyan-color};
+  --global-hover-text-color: #{v.$white-color};
+  --global-footer-bg-color: #{v.$grey-color-light};
+  --global-footer-text-color: #{v.$grey-color-dark};
+  --global-footer-link-color: #{v.$black-color};
+  --global-distill-app-color: #{v.$grey-color-light};
+  --global-divider-color: #424246;
+  --global-card-bg-color: #{v.$grey-900};
+  --global-back-to-top-bg-color: rgba(
+    #{color.channel(v.$white-color, "red", $space: rgb)},
+    #{color.channel(v.$white-color, "green", $space: rgb)},
+    #{color.channel(v.$white-color, "blue", $space: rgb)},
+    0.5
+  );
+  --global-back-to-top-text-color: #{v.$black-color};
+  --global-newsletter-bg-color: #{v.$grey-color-light};
+  --global-newsletter-text-color: #{v.$grey-color-dark};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #215d42;
+  --global-tip-block-text: #beffe2;
+  --global-tip-block-title: #e2f5ec;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #6b5900;
+  --global-warning-block-text: #fff2af;
+  --global-warning-block-title: #fff8d8;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #600;
+  --global-danger-block-text: #ffb9b9;
+  --global-danger-block-title: #ffe0e0;
+
+  .only-light {
+    display: none;
+  }
+
+  .only-dark {
+    display: block;
+  }
+}
+
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: inline-block;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: inline-block;
+  }
+}
+
+.fa-half-sun-moon {
+  position: relative;
+  display: inline-block;
+
+  --fa-font: var(--fa-font-solid);
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 1em;
+  height: 1em;
+}
+
+.fa-half-sun-moon::before,
+.fa-half-sun-moon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: -0.5px;
+  bottom: -0.5px;
+  text-align: center;
+  line-height: 1em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  font: var(--fa-font);
+}
+
+/* Left half: MOON */
+.fa-half-sun-moon::before {
+  content: "\f111";
+  color: var(--global-text-color);
+  clip-path: polygon(0 0, calc(50% - 0.5px) 0, calc(50% - 0.5px) 100%, 0 100%);
+}
+
+/* Right half: SUN */
+.fa-half-sun-moon::after {
+  content: "\f185";
+  color: var(--global-text-color);
+  clip-path: polygon(calc(50% + 0.5px) 0, 100% 0, 100% 100%, calc(50% + 0.5px) 100%);
+  right: -1.5px;
+  transform: translateX(-1px);
+}
+
+#light-toggle:hover .fa-half-sun-moon::before {
+  color: var(--global-theme-color);
+}
+
+#light-toggle:hover .fa-half-sun-moon::after {
+  color: var(--global-theme-color);
+}
+
+// Bolder text + subtle grey box on nav tab hover.
+.navbar-nav .nav-item .nav-link {
+  border-radius: 6px;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+
+html[data-theme="dark"] .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+// Muted pastel, semi-transparent tag/button colors for publication entry
+// links (Abstract, Journal/Preprint, DOI, PDF, Code, Bib, etc.), replacing
+// the default plain-outline look.
+.publications ol.bibliography li .links a.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  height: 1.5rem;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .ai,
+  .fa-brands,
+  .fa-regular,
+  .fa-solid {
+    margin-right: 0.25rem;
+  }
+
+  .arxiv-logo-svg {
+    height: 0.95rem;
+    width: auto;
+    display: inline-block;
+  }
+
+  .medrxiv-logo-img {
+    height: 0.75rem;
+    width: auto;
+    display: inline-block;
+  }
+
+  &.tag-pdf.tag-arxiv-logo {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.15);
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  &.tag-pdf.tag-medrxiv-logo {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.15);
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+  padding-left: 0.35rem !important;
+  padding-right: 0.35rem !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0.35rem;
+
+  &.tag-abstract {
+    background-color: rgba(100, 116, 139, 0.12);
+    border-color: rgba(100, 116, 139, 0.35);
+    color: #334155;
+  }
+  &.tag-journal {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.35);
+    color: #1e3a8a;
+  }
+  &.tag-doi {
+    background-color: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.35);
+    color: #1e40af;
+  }
+  &.tag-arxiv {
+    background-color: rgba(217, 119, 6, 0.1);
+    border-color: rgba(217, 119, 6, 0.35);
+    color: #92400e;
+  }
+  &.tag-pdf {
+    background-color: rgba(14, 165, 233, 0.1);
+    border-color: rgba(14, 165, 233, 0.35);
+    color: #075985;
+  }
+  &.tag-code {
+    background-color: rgba(13, 148, 136, 0.1);
+    border-color: rgba(13, 148, 136, 0.35);
+    color: #115e59;
+  }
+  &.tag-bib {
+    background-color: rgba(190, 18, 60, 0.08);
+    border-color: rgba(190, 18, 60, 0.3);
+    color: #881337;
+  }
+  &.tag-purple {
+    background-color: rgba(147, 51, 234, 0.1);
+    border-color: rgba(147, 51, 234, 0.3);
+    color: #581c87;
+  }
+  &.tag-amber {
+    background-color: rgba(202, 138, 4, 0.1);
+    border-color: rgba(202, 138, 4, 0.3);
+    color: #713f12;
+  }
+  &.tag-pink {
+    background-color: rgba(219, 39, 119, 0.1);
+    border-color: rgba(219, 39, 119, 0.3);
+    color: #831843;
+  }
+
+  &:hover {
+    filter: brightness(0.92);
+    color: inherit;
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn {
+  &.tag-abstract,
+  &.tag-journal,
+  &.tag-doi,
+  &.tag-arxiv,
+  &.tag-pdf,
+  &.tag-code,
+  &.tag-bib,
+  &.tag-purple,
+  &.tag-amber,
+  &.tag-pink {
+    color: var(--global-text-color);
+  }
+}
+
+// Small, indented note below a publication entry (e.g. clarifying that a
+// preprint has also been accepted at a conference, etc.), set via the
+// custom `remark` bibtex field.
+.bib-remark {
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="dark"] .bib-remark {
+  border-left-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+// Talk title on the talks page: reads as the actual title of the talk
+// (primary content), not a secondary aside, so it's normal weight/color
+// with quotation marks instead of the muted italic left-border treatment
+// used for .bib-remark (kept as-is on the teaching/publications pages).
+.talk-title {
+  margin-top: 0;
+  margin-left: 1rem;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+
+  &::before {
+    content: "\201C";
+  }
+
+  &::after {
+    content: "\201D";
+  }
+}
+
+html[data-theme="dark"] .talk-title {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+// Soft-card variant used for the education/affiliations detail boxes on the
+// about page (thesis/advisor), distinct from the .bib-remark style used on
+// the talks/teaching/publications pages.
+.about-remark {
+  overflow: hidden; // establishes a new block formatting context so this
+  // box doesn't ignore the floated profile photo and run underneath it
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  margin-left: 1.25rem;
+  line-height: 1.3;
+  font-size: 0.8rem;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="dark"] .about-remark {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+// Extra breathing room between the bio paragraph / current affiliations /
+// education / academic awards sections on the about page, so the leftover
+// space next to the (taller) profile photo+news column reads as generous
+// spacing throughout rather than one big gap dumped right before
+// "selected publications".
+.clearfix > h2 {
+  margin-top: clamp(1.5rem, 4vh, 3.5rem);
+}
+
+// Email line inside the profile "more_info" address block, styled
+// distinctly (monospace, muted, small caps) to set it apart from the
+// plain address lines above it.
+.profile-email {
+  margin-top: 0.5rem !important;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="dark"] .profile-email {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+// News block moved inside the profile column on the about page (see
+// _layouts/about.liquid), so it sits under the photo instead of spanning
+// full width below all the bio/education content.
+.profile-news {
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(0, 0, 0, 0.035);
+  border-radius: 8px;
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .table-responsive {
+    max-height: 320px !important;
+    overflow-y: auto;
+  }
+
+  // Auto-scrolling ticker: the track's content is duplicated once in the
+  // liquid include so translateY(-50%) loops seamlessly back to the start.
+  .news-scroll-viewport {
+    position: relative;
+    max-height: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+
+    // Reset to the top (not just freeze mid-loop) while hovering, so manual
+    // scrolling starts from the true top instead of wherever the animation
+    // happened to be.
+    &.is-hovering .news-scroll-track {
+      animation-play-state: paused;
+      transform: translateY(0) !important;
+    }
+  }
+
+  .news-scroll-track {
+    animation: profile-news-autoscroll 28s linear infinite;
+  }
+
+  .news-year-heading {
+    margin: 0.6rem 0 0.2rem;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.55);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  tr {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0;
+  }
+
+  th {
+    width: 2.1rem !important;
+    flex: 0 0 2.1rem;
+    padding: 0.25rem 0.1rem !important;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.25rem 0.1rem !important;
+    font-size: 0.78rem;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+html[data-theme="dark"] .profile-news {
+  background-color: rgba(255, 255, 255, 0.05);
+
+  .news-year-heading {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  th {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+// Highlighted variant, set via `highlight = {true}` alongside `remark`, for
+// remarks that deserve more visual emphasis (e.g. an award or selection).
+.publications ol.bibliography li .bib-remark.highlight {
+  margin-top: 0.35rem;
+  padding: 0.3rem 0.6rem;
+  border-left: 3px solid #daa520;
+  border-radius: 4px;
+  background-color: rgba(218, 165, 32, 0.14);
+  font-style: normal;
+  font-weight: 500;
+  color: #93700a;
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .bib-remark.highlight {
+  border-left-color: #f2ca4e;
+  background-color: rgba(242, 202, 78, 0.16);
+  color: #ffe9a8;
+}
+
+// Distinguish preprint entries (abbr = "Preprint") from published ones in
+// the venue/abbr badge, since they otherwise look identical.
+.publications ol.bibliography li .abbr abbr.badge-preprint {
+  background-color: #94a3b8;
+  color: #1e293b;
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.badge-preprint {
+  background-color: rgba(203, 213, 225, 0.35);
+  color: #e2e8f0;
+}
+
+// One-time legend explaining the joint/equal-first-author "*" marker, shown
+// once above the bibliography list instead of repeating a note per entry.
+.co-first-legend {
+  font-size: 0.95rem;
+  font-style: normal;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+// Font Awesome icon markers used in place of raw asterisk/envelope glyphs
+// for joint-first-author / corresponding-author annotations, so both
+// symbols share consistent size and visual weight.
+.author-marker {
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.co-first-legend .author-marker {
+  font-size: 0.85em;
+}
+
+html[data-theme="dark"] .co-first-legend {
+  color: #ffffff;
+}
+
+// Semi-transparent year-range pill next to section headings (e.g. teaching
+// page), matching the pastel tag/badge look used for bib entry buttons.
+.year-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.15rem 0.65rem;
+  margin-left: 0.5rem;
+  border-radius: 999px;
+  background-color: rgba(47, 111, 176, 0.12);
+  color: #1c4f80;
+  vertical-align: middle;
+}
+
+html[data-theme="dark"] .year-badge {
+  background-color: rgba(111, 168, 220, 0.18);
+  color: #cfe2f3;
+}
+
+// Award list on the about page. The flex row lives on a wrapper <div>
+// inside each <li> (not the <li> itself) so the native bullet marker,
+// which display:flex would otherwise suppress, stays visible.
+.award-list {
+  padding-left: 1.2rem;
+}
+
+.award-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.2rem 0.5rem;
+}
+
+// Clickable pill that drops a small detail panel below itself (like a
+// dropdown), anchored to the badge's position, instead of pushing the
+// row's layout around when opened.
+.award-details {
+  position: relative;
+  flex-shrink: 0;
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // down-arrow hint that flips to an up-arrow while the detail panel
+    // is open, so it's clear the pill is clickable and toggleable
+    &::after {
+      content: "\25be";
+      display: inline-block;
+      margin-left: 0.3rem;
+      transition: transform 0.15s ease;
+    }
+  }
+
+  &[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  .about-remark {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 5;
+    margin-top: 0.3rem;
+    padding: 0.35rem 0.6rem;
+    white-space: nowrap;
+    background-color: v.$white-color;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    animation: award-detail-fade-in 0.15s ease;
+  }
+}
+
+html[data-theme="dark"] .award-details .about-remark {
+  background-color: #2c2c2c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes award-detail-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.award-amount-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+
+  // when used as a real link (e.g. "Press Release"), not just a
+  // details/summary toggle: pastel UCLA blue/gold treatment so it stands
+  // out as a proper external link, without shouting
+  &:is(a) {
+    text-decoration: none;
+    background-color: rgba(39, 116, 174, 0.14);
+    color: #3d7ea6;
+
+    &:hover {
+      background-color: rgba(39, 116, 174, 0.24);
+    }
+  }
+}
+
+html[data-theme="dark"] .award-amount-badge:is(a) {
+  background-color: rgba(39, 116, 174, 0.3);
+  color: #8fc1e8;
+
+  &:hover {
+    background-color: rgba(39, 116, 174, 0.42);
+  }
+}
+
+.award-details[open] .award-amount-badge {
+  background-color: rgba(47, 111, 176, 0.12);
+  color: #1c4f80;
+}
+
+html[data-theme="dark"] .award-amount-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html[data-theme="dark"] .award-details[open] .award-amount-badge {
+  background-color: rgba(111, 168, 220, 0.18);
+  color: #cfe2f3;
+}
+
+// Cap the project-card thumbnail height on the software listing page so a
+// square logo (like spStack's) doesn't dominate the card.
+.projects .card-img-top {
+  max-height: 160px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+// Small language/tech badges on project cards (e.g. R, C++, Python), set
+// via the custom `languages` front matter array on a project page.
+.project-languages {
+  margin-bottom: 0.5rem;
+}
+
+.project-lang-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 999px;
+  background-color: rgba(13, 148, 136, 0.12);
+  color: #115e59;
+
+  i {
+    margin-right: 0.2rem;
+  }
+}
+
+html[data-theme="dark"] .project-lang-badge {
+  background-color: rgba(45, 212, 191, 0.18);
+  color: #99f6e4;
+}
+
+// Float a project's logo (e.g. a transparent hex sticker) to the right of
+// the body text on its detail page, with no shadow/background so its
+// actual shape (not a square bounding box) shows through.
+.spstack-figure-float {
+  float: right;
+  width: 200px;
+  margin: 0 0 1rem 1.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .spstack-figure-float {
+    float: none;
+    width: 160px;
+    margin: 0 auto 1rem;
+  }
+}
+
+// Distribution-status row on project cards: a "CRAN" badge (if the project
+// has a `cran` link) plus a small GitHub icon link (if it has a `github`
+// link) shown side by side, via the `cran`/`github` front matter fields.
+.project-status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-status-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  text-decoration: none;
+
+  i {
+    margin-right: 0.25rem;
+  }
+
+  &.cran {
+    background-color: rgba(22, 101, 216, 0.12);
+    color: #1e40af;
+
+    &:hover {
+      color: #1e40af;
+      filter: brightness(0.92);
+    }
+  }
+}
+
+// Fix for glyph overlap (e.g. "ffi" in "affiliations") on markdown headings.
+// The base theme applies a tight negative letter-spacing to headings that
+// only becomes visually obvious on narrow glyph pairs like f/i; reset it.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: normal;
+}
+
+html[data-theme="dark"] .project-status-badge {
+  &.cran {
+    background-color: rgba(96, 165, 250, 0.18);
+    color: #bfdbfe;
+  }
+}
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #1f2937;
+
+  &:hover {
+    color: #000000;
+  }
+
+  .stars {
+    font-size: 0.75rem;
+  }
+}
+
+html[data-theme="dark"] .project-github-link {
+  color: #e5e7eb;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
