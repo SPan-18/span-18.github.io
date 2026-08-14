@@ -35,7 +35,7 @@ I am a Postdoctoral Scholar in the [Department of Statistics](https://stat.uw.ed
 ## current affiliations
 
 - **Postdoctoral Scholar**, [Department of Statistics](https://stat.uw.edu/people/soumyakanti-pan), University of Washington
-  <div class="about-remark">Advisor: <a href="https://thmccormick.github.io/">Tyler H. McCormick</a></div>
+  <div class="about-remark">Advisor: <a href="https://thmccormick.github.io/">Prof. Tyler H. McCormick</a></div>
 - **UW Data Science Postdoctoral Fellow**, [eScience Institute](https://escience.washington.edu/member/soumyakanti-pan/)
 
 ## education
