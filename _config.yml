@@ -6,8 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Soumyakanti
 middle_name:
 last_name: Pan
-contact_note: >
-  Email is the best way to reach me.
+# contact_note: >
+#   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal webpage of Soumyakanti Pan, Ph.D. candidate in Biostatistics at UCLA.
 footer_text: ""
