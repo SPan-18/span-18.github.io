@@ -19,6 +19,7 @@
   show        = {true},
   remark      = {Selected as one of four papers for presentation at the "Selected Papers from Bayesian Analysis" session at ISBA 2026 World Meeting, Nagoya, Japan.},
   highlight   = {true},
+  google_scholar_id = {W7OEmFMy1HYC},
   abstract    = {Analysing non-Gaussian spatial-temporal data typically requires introducing spatial dependence in generalised linear models through the link function of an exponential family distribution. However, unlike in Gaussian likelihoods, inference is considerably encumbered by the inability to analytically integrate out the random effects and reduce the dimension of the parameter space. We devise an approach that obviates these issues by exploiting generalised conjugate multivariate distribution theory for exponential families, which enables exact sampling from analytically available posterior distributions conditional upon some fixed process parameters. We evaluate inferential performance on simulated data, compare with fully Bayesian inference using Markov chain Monte Carlo and apply our proposed method to analyse spatially-temporally referenced avian count data from the North American Breeding Bird Survey database.}
 }
 
@@ -34,6 +35,7 @@
   pdf         = {https://arxiv.org/pdf/2606.02589},
   preview     = {hasse3.png},
   selected    = {true},
+  google_scholar_id = {YsMSGLbcyi4C},
   show        = {true},
   abstract    = {Integrating over model uncertainty in factorial designs via Bayesian model averaging is hindered by the combinatorial explosion of interpretable interaction effects, often yielding a multimodal posterior, where standard Markov chain Monte Carlo algorithms encounter significant convergence issues. We propose a general computational framework that repurposes Rashomon sets, collections of high-performing models traditionally valued for prediction and interpretability, as a strategic "warm start" for estimating the full posterior. Our method, Rashomon-seeded annealing, initializes annealed importance sampling (AIS) by anchoring the starting density within these pre-identified, high-evidence regions while preserving global support over the entire model space. Rather than restricting inference to the Rashomon set and understating uncertainty, the AIS correction restores full posterior inference, turning the Rashomon certificate from an inferential truncation into a proposal mechanism. We demonstrate this approach using Rashomon Partition Sets (RPS) as a rigorous, certified seed constructor for factorial designs. The resulting algorithm yields consistent self-normalized posterior summaries, such as model-averaged cell means, credible intervals, and uncertainty summaries without exhaustive enumeration of the complete model space. This bridges the gap between high-evidence model discovery and rigorous Bayesian inference, and outlines a general strategy in which any high-posterior seed set can provide computational leverage for AIS-based model averaging.}
 }
@@ -98,6 +100,7 @@
   preview     = {oz-ca.png},
   selected    = {false},
   show        = {true},
+  google_scholar_id = {UeHWp8X0CEIC},
   abstract    = {Air pollution remains a major environmental risk factor that is often associated with adverse health outcomes. However, quantifying and evaluating its effects on human health is challenging due to the complex nature of exposure data. This article develops a Bayesian hierarchical model to analyze spatially-temporally misaligned exposure and health outcome data. We introduce Bayesian predictive stacking, which optimally combines multiple predictive spatial-temporal models and avoids iterative estimation algorithms such as Markov chain Monte Carlo. We apply our proposed method to study the effects of ozone on asthma in the state of California.}
 }
 
@@ -134,5 +137,6 @@
   preview     = {mechih.jpg},
   selected    = {false},
   show        = {true},
+  google_scholar_id = {u5HHmVD_uO8C},
   abstract    = {A series of experiments in stationary and moving passenger rail cars were conducted to measure removal rates of particles in the size ranges of SARS-CoV-2 viral aerosols and the air changes per hour provided by existing and modified air handling systems. Such methods for exposure assessments are customarily based on mechanistic models derived from physical laws of particle movement that are deterministic and do not account for measurement errors inherent in data collection. The resulting analysis compromises on reliably learning about mechanistic factors such as ventilation rates, aerosol generation rates, and filtration efficiencies from field measurements. This manuscript develops a Bayesian state-space modeling framework that synthesizes information from the mechanistic system as well as the field data by deriving a stochastic model from finite difference approximations of differential equations explaining particle concentrations. Our inferential framework trains the mechanistic system using the field measurements from the chamber experiments and delivers reliable estimates of the underlying physical process with fully model-based uncertainty quantification.}
 }
