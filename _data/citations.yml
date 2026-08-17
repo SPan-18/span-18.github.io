@@ -1,3 +1,31 @@
 metadata:
-  last_updated: null
-papers: {}
+  last_updated: '2026-08-17'
+papers:
+  7IUdEDYAAAAJ:IjCSPb-OGe4C:
+    citations: 0
+    title: Bayesian Modeling and Inference for Complex Dependent Non-Gaussian Data
+    year: '2025'
+  7IUdEDYAAAAJ:UeHWp8X0CEIC:
+    citations: 1
+    title: "Bayesian Inference for Spatially\u2010Temporally Misaligned Data Using Predictive Stacking"
+    year: '2026'
+  7IUdEDYAAAAJ:W7OEmFMy1HYC:
+    citations: 17
+    title: Bayesian Inference for Spatial-Temporal Non-Gaussian Data Using Predictive Stacking
+    year: '2025'
+  7IUdEDYAAAAJ:YsMSGLbcyi4C:
+    citations: 0
+    title: Rashomon-Seeded Annealing for Robust Bayesian Inference in Factorial Designs
+    year: '2026'
+  7IUdEDYAAAAJ:eQOLeE2rZwMC:
+    citations: 0
+    title: A Multimodal Benchmark for Evaluating Cause-of-Death Inference Using Child Health and Mortality Data
+    year: '2026'
+  7IUdEDYAAAAJ:u5HHmVD_uO8C:
+    citations: 2
+    title: Bayesian hierarchical modeling and inference for mechanistic systems in industrial hygiene
+    year: '2024'
+  7IUdEDYAAAAJ:zYLM7Y9cAGgC:
+    citations: 4
+    title: 'spStack: Bayesian Geostatistics Using Predictive Stacking'
+    year: '2024'
