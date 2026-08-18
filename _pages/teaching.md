@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: teaching and mentoring
+nav_title: teaching
 description: Courses as TA/special reader and mentorship experience.
 nav: true
 nav_order: 5
