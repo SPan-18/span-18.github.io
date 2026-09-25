@@ -40,20 +40,19 @@
   abstract    = {Integrating over model uncertainty in factorial designs via Bayesian model averaging is hindered by the combinatorial explosion of interpretable interaction effects, often yielding a multimodal posterior, where standard Markov chain Monte Carlo algorithms encounter significant convergence issues. We propose a general computational framework that repurposes Rashomon sets, collections of high-performing models traditionally valued for prediction and interpretability, as a strategic "warm start" for estimating the full posterior. Our method, Rashomon-seeded annealing, initializes annealed importance sampling (AIS) by anchoring the starting density within these pre-identified, high-evidence regions while preserving global support over the entire model space. Rather than restricting inference to the Rashomon set and understating uncertainty, the AIS correction restores full posterior inference, turning the Rashomon certificate from an inferential truncation into a proposal mechanism. We demonstrate this approach using Rashomon Partition Sets (RPS) as a rigorous, certified seed constructor for factorial designs. The resulting algorithm yields consistent self-normalized posterior summaries, such as model-averaged cell means, credible intervals, and uncertainty summaries without exhaustive enumeration of the complete model space. This bridges the gap between high-evidence model discovery and rigorous Bayesian inference, and outlines a general strategy in which any high-posterior seed set can provide computational leverage for AIS-based model averaging.}
 }
 
-@article{coda_ff_medrxiv,
-  abbr        = {Preprint},
+@article{coda_ff_neurips2026,
+  abbr        = {NeurIPS'26},
   bibtex_show = {true},
   author      = {Yang∗, Junhe and Pan∗✉, Soumyakanti and Lim, Hyun Seung and Chu, Yue and Guo, Yuting and Agarwal, Nishtha and Babbar, Varun and Parikh, Gaurav Rajesh and Chen, Yiqun T. and Rees, Chris A. and Dangor, Ziyaad and Lala, Sanjay G. and Li, Zehang Richard and Clark, Samuel J. and Wu, Zhenke and Datta, Abhirup and Liu, Li and Rudin, Cynthia and Scarpino, Samuel V. and Gyori, Benjamin M. and McCormick, Tyler H.},
   title       = {A Multimodal Benchmark for Evaluating Cause-of-Death Inference Using Child Health and Mortality Data},
-  elocation-id = {2026.07.13.26357980},
-  journal     = {medRxiv preprint},
+  journal     = {Advances in Neural Information Processing Systems},
+  volume      = {40},
   year        = {2026},
-  pubstate    = {Submitted},
-  doi         = {10.64898/2026.07.13.26357980},
+  pubstate    = {Accepted},
   pdf         = {https://www.medrxiv.org/content/10.64898/2026.07.13.26357980v1},
   preview     = {ff_fig.png},
   show        = {true},
-  selected    = {false},
+  selected    = {true},
   abstract    = {Accurately attributing causes of death is vital for global health, yet fewer than 5% of deaths in resource-constrained regions are medically certified. To assign causes to these unlabeled deaths at scale, practitioners traditionally rely on verbal autopsy, using supervised statistical models to classify based on structured survey data. However, modern mortality surveillance increasingly collects rich, unstructured multimodal data, such as free-text caregiver narratives and postmortem diagnostics, which traditional supervised statistical models struggle to seamlessly integrate. In this paper, we present a comprehensive, multimodal benchmark for cause-of-death classification using data from the Child Health and Mortality Prevention Surveillance (CHAMPS) network, a unique surveillance platform spanning nine countries across South Asia and Sub-Saharan Africa. Using this dataset, we introduce an evaluation framework designed to rigorously assess diagnostic reasoning, moving beyond traditional metrics that fail to capture complex clinical realities. We demonstrate the utility of this benchmark by evaluating zero-shot large language models against supervised baselines across various data modalities. Our results reveal distinct differences in how these modeling approaches synthesize unstructured medical evidence. This benchmark provide a rigorously defined resource for assessing clinical reasoning in next-generation mortality surveillance.}
 }
 
