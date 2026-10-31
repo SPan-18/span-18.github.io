@@ -2,6 +2,10 @@
 # they're sorted by date). To hide an old entry without deleting it, either
 # set `show: false` or just comment out its whole block with `#`.
 
+- date: 2026-10-27
+  content: "New preprint! We estimate the share of pages on Common Crawl web that contains AI-generated text."
+  show: true
+
 - date: 2026-09-24
   content: "Paper accepted to _NeurIPS 2026_ E&D track."
   show: true

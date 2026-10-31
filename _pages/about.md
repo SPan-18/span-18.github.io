@@ -32,6 +32,29 @@ latest_posts:
 
 I am a Postdoctoral Scholar in the [Department of Statistics](https://stat.uw.edu/people/soumyakanti-pan) at the University of Washington, working with [Tyler H. McCormick](https://thmccormick.github.io/), and a UW Data Science Fellow at the [eScience Institute](https://escience.washington.edu/). I obtained my Ph.D. in Biostatistics at the [University of California Los Angeles](https://ph.ucla.edu/departments/biostatistics) under [Sudipto Banerjee](http://sudipto.bol.ucla.edu/), following a B.Stat and M.Stat at the [Indian Statistical Institute, Kolkata](https://www.isical.ac.in/). My research focuses on Bayesian integrative learning, which involves assimilating inference across multiple models, often while navigating complex model spaces and associated computational challenges. I am also interested in statistical computing as well as in uncertainty quantification for complex datasets and systems, with applications in global and public health. More recently, I have become interested in the _Rashomon_ effect, a term Leo Breiman borrowed from [Akira Kurosawa’s film](https://en.wikipedia.org/wiki/Rashomon) to describe the coexistence of many equally plausible explanations for the same data.
 
+<!-- Dismissible highlight (change data-highlight-id for a new one so it reappears) -->
+<div class="profile-highlight" id="profile-highlight" data-highlight-id="ai-internet-2026" hidden>
+<button type="button" class="profile-highlight-close" aria-label="Dismiss highlight">&times;</button>
+<img src="/assets/img/publication_preview/ai_internet2.png" alt="" class="profile-highlight-img">
+<div class="profile-highlight-text">
+<span class="profile-highlight-label">New preprint</span> The prevalence of pages containing AI-generated text is growing across the web. Using 5.1 million pages, a Bayesian hierarchical model calibrates AI detectors and estimates prevalence with uncertainty quantification. <a href="https://arxiv.org/abs/2610.36631">Read the paper</a>
+</div>
+</div>
+<script>
+(function () {
+var box = document.getElementById('profile-highlight');
+if (!box) return;
+var key = 'highlight-dismissed-' + box.getAttribute('data-highlight-id');
+var dismissed = false;
+try { dismissed = localStorage.getItem(key) === '1'; } catch (e) {}
+if (!dismissed) box.hidden = false;
+box.querySelector('.profile-highlight-close').addEventListener('click', function () {
+box.hidden = true;
+try { localStorage.setItem(key, '1'); } catch (e) {}
+});
+})();
+</script>
+
 ## current affiliations
 
 - **Postdoctoral Scholar**, [Department of Statistics](https://stat.uw.edu/people/soumyakanti-pan), University of Washington

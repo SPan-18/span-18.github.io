@@ -452,6 +452,84 @@ html[data-theme="dark"] .profile-email {
 // News block moved inside the profile column on the about page (see
 // _layouts/about.liquid), so it sits under the photo instead of spanning
 // full width below all the bio/education content.
+.profile-highlight {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 2rem 0.6rem 0.75rem;
+  border-left: 2px solid rgba(150, 105, 155, 0.55);
+  background-color: rgba(150, 105, 155, 0.09);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: rgba(0, 0, 0, 0.7);
+
+  a {
+    color: #86578b;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  .profile-highlight-img {
+    width: 88px;
+    height: 64px;
+    flex: 0 0 88px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .profile-highlight-label {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    background-color: rgba(150, 105, 155, 0.18);
+    color: #7a4f80;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    vertical-align: 1px;
+  }
+
+  .profile-highlight-close {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.4rem;
+    border: 0;
+    background: none;
+    padding: 0 0.25rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: inherit;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+html[data-theme="dark"] .profile-highlight {
+  border-left-color: rgba(200, 160, 210, 0.5);
+  background-color: rgba(200, 160, 210, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+
+  a {
+    color: #d3aedb;
+  }
+
+  .profile-highlight-label {
+    background-color: rgba(200, 160, 210, 0.25);
+    color: #dcbfe3;
+  }
+}
+
 .profile-news {
   margin-top: 2rem;
   padding: 0.75rem 1rem;

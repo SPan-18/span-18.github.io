@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-17'
+  last_updated: '2026-10-30'
 papers:
   7IUdEDYAAAAJ:IjCSPb-OGe4C:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: "Bayesian Inference for Spatially\u2010Temporally Misaligned Data Using Predictive Stacking"
     year: '2026'
   7IUdEDYAAAAJ:W7OEmFMy1HYC:
-    citations: 17
+    citations: 19
     title: Bayesian Inference for Spatial-Temporal Non-Gaussian Data Using Predictive Stacking
     year: '2025'
   7IUdEDYAAAAJ:YsMSGLbcyi4C:
